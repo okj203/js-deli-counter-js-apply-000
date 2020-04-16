@@ -32,12 +32,12 @@ let nowServing = katzDeliLine => {
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
-    var output = "";
+    let newLine = '';
     for(var i = 0; i < katzDeliLine.length; i++) {
-        output += (i + 1) + ". " + katzDeliLine[i] + ", ";
+        newLine += (i + 1) + '. ' + katzDeliLine[i] + ', ';
       }
-    output = output.slice(0, -2);
-    return `The line is currently: ${output}`;
+    newLine = newLine.slice(0, -2);
+    return `The line is currently: ${newLine}`;
   } else {
     return "The line is currently empty.";
   }
