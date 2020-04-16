@@ -17,6 +17,12 @@ let nowServing = katzDeliLine => {
 
 let currentLine = katzDeliLine => {
   if (katzDeliLine.length === 0) {
-    return 
+    return `The line is currently empty.`
+    
+  }else {
+    for (let i = 0; i < katzDeliLine.length; i++) {
+      let person = katzDeliLine[i];
+    }
   }
 }
+
