@@ -25,8 +25,8 @@ let currentLine = katzDeliLine => {
       newLine += (i + 1) + '. ' + katzDeliLine[i] + ', '
      
     }
-    newLine = newLine.slice(0, 2)
+    newLine = newLine.slice(0, newLine.length - 2);
   }
-  return  
+  return newLine;
 }
 
