@@ -5,5 +5,5 @@ let takeANumber = (katzDeliLine, newPerson) => {
 
 let nowServing = katzDeliLine => {
   return `Currently serving ${katzDeliLine[0]}`;
-  katzDeliLine.shift(katzDeliLine);
+  katzDeliLine.shift();
 }
