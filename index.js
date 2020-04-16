@@ -25,7 +25,7 @@ let currentLine = katzDeliLine => {
      
     }
     newLine = newLine.slice(0, -2);
-    
+      return `The line is currently: ${newLine}`;
   }
 }
 
