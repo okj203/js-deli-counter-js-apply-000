@@ -26,7 +26,7 @@ let currentLine = katzDeliLine => {
       newStr += 'The line is currently: ' + toString(i + 1) + '. ' + person + ','
       newStr += toString(katzDeliLine.length) + '. ' + katzDeliLine[katzDeliLine.length - 1];
     }
+    return newStr;
   }
-  return newStr;
 }
 
