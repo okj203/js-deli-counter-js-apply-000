@@ -3,24 +3,12 @@ let takeANumber = (katzDeliLine, newPerson) => {
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
 }
 
-// let nowServing = katzDeliLine => {
-//   if (katzDeliLine.length > 0){
-//     return `Currently serving ${katzDeliLine[0]}.`;
-//     katzDeliLine.shift();
+let nowServing = katzDeliLine => {
+  if (katzDeliLine.length > 0){
+    return `Currently serving ${katzDeliLine[0]}.`;
+    katzDeliLine.shift();
     
-//   } else if (katzDeliLine.length === 0){
-//     return `There is nobody waiting to be served!`
-//   }
-// }
-
-function nowServing(currentLine){
-var outputString;
-if (currentLine.length === 0){
-outputString = “There is nobody waiting to be served!”
-}
-else{
-outputString = “Currently serving ” + currentLine[0] + “.”;
-currentLine.shift();
-}
-return outputString;
+  } else if (katzDeliLine.length === 0){
+    return `There is nobody waiting to be served!`
+  }
 }
