@@ -14,31 +14,31 @@ let nowServing = katzDeliLine => {
 }
 
 
-// let currentLine = katzDeliLine => {
-//   if (katzDeliLine.length === 0) {
-//     return `The line is currently empty.`
+let currentLine = katzDeliLine => {
+  if (katzDeliLine.length === 0) {
+    return `The line is currently empty.`
     
-//   }else {
-//     let newLine = '';
-//     for (let i = 0; i < katzDeliLine.length - 1; i++) {
-//       newLine += (i + 1) + '. ' + katzDeliLine[i] + ', '
-     
-//     }
-//     newLine = newLine.slice(0, -2);
-//   }
-//   return newLine;
-// }
-
-
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
+  }else {
     let newLine = '';
-    for(var i = 0; i < katzDeliLine.length; i++) {
-        newLine += (i + 1) + '. ' + katzDeliLine[i] + ', ';
-      }
+    for (let i = 0; i < katzDeliLine.length - 1; i++) {
+      newLine += (i + 1) + '. ' + katzDeliLine[i] + ', '
+     
+    }
     newLine = newLine.slice(0, -2);
-    return `The line is currently: ${newLine}`;
-  } else {
-    return "The line is currently empty.";
   }
+  return newLine;
 }
+
+
+// function currentLine(katzDeliLine) {
+//   if (katzDeliLine.length > 0) {
+//     let newLine = '';
+//     for(var i = 0; i < katzDeliLine.length; i++) {
+//         newLine += (i + 1) + '. ' + katzDeliLine[i] + ', ';
+//       }
+//     newLine = newLine.slice(0, -2);
+//     return `The line is currently: ${newLine}`;
+//   } else {
+//     return "The line is currently empty.";
+//   }
+// }
