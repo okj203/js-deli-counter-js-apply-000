@@ -17,6 +17,6 @@ let nowServing = katzDeliLine => {
 
 let currentLine = katzDeliLine => {
   if (katzDeliLine.length === 0) {
-    
+    return 
   }
 }
