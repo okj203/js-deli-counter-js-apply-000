@@ -24,21 +24,21 @@ let currentLine = katzDeliLine => {
       newLine += (i + 1) + '. ' + katzDeliLine[i] + ', '
      
     }
-    newLine = newLine.slice(0, -2);
+    newLine = newLine.slice(0, -1);
     return `The line is currently: ${newLine}`;
   }
 }
 
 
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
-    let newLine = '';
-    for(var i = 0; i < katzDeliLine.length; i++) {
-        newLine += (i + 1) + '. ' + katzDeliLine[i] + ', ';
-      }
-    newLine = newLine.slice(0, -2);
-    return `The line is currently: ${newLine}`;
-  } else {
-    return "The line is currently empty.";
-  }
-}
+// function currentLine(katzDeliLine) {
+//   if (katzDeliLine.length > 0) {
+//     let newLine = '';
+//     for(var i = 0; i < katzDeliLine.length; i++) {
+//         newLine += (i + 1) + '. ' + katzDeliLine[i] + ', ';
+//       }
+//     newLine = newLine.slice(0, -2);
+//     return `The line is currently: ${newLine}`;
+//   } else {
+//     return "The line is currently empty.";
+//   }
+// }
