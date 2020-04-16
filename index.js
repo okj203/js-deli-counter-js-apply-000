@@ -28,6 +28,6 @@ let currentLine = katzDeliLine => {
      
     }
   }
-  return newLine
+  return  newLine += toString(katzDeliLine.length) + '. ' + katzDeliLine[katzDeliLine.length - 1];
 }
 
