@@ -13,3 +13,14 @@ let takeANumber = (katzDeliLine, newPerson) => {
 //   }
 // }
 
+function nowServing(currentLine){
+var outputString;
+if (currentLine.length === 0){
+outputString = “There is nobody waiting to be served!”
+}
+else{
+outputString = “Currently serving ” + currentLine[0] + “.”;
+currentLine.shift();
+}
+return outputString;
+}
