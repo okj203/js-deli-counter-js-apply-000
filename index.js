@@ -16,16 +16,16 @@ let nowServing = katzDeliLine => {
 
 
 let currentLine = katzDeliLine => {
-  var newLine = '';
   if (katzDeliLine.length === 0) {
-    newLine = `The line is currently empty.`
+    return `The line is currently empty.`
     
   }else {
-    newStr = 
+    let newLine = 'The line is currently: '
+    
     for (let i = 0; i < katzDeliLine.length - 1; i++) {
       let person = katzDeliLine[i];
-      newStr +=  + toString(i + 1) + '. ' + person + ','
-      newStr += toString(katzDeliLine.length) + '. ' + katzDeliLine[katzDeliLine.length - 1];
+      newLine += toString(i + 1) + '. ' + person + ','
+      newLine += toString(katzDeliLine.length) + '. ' + katzDeliLine[katzDeliLine.length - 1];
     }
   }
   return newLine
