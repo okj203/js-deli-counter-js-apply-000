@@ -20,7 +20,7 @@ let currentLine = katzDeliLine => {
     
   }else {
     let newLine = '';
-    for (let i = 0; i < katzDeliLine.length - 1; i++) {
+    for (let i = 0; i < katzDeliLine.length; i++) {
       newLine += (i + 1) + '. ' + katzDeliLine[i] + ', '
      
     }
