@@ -25,7 +25,7 @@ let currentLine = katzDeliLine => {
     for (let i = 0; i < katzDeliLine.length - 1; i++) {
       let person = katzDeliLine[i];
       newLine += toString(i + 1) + '. ' + person + ','
-      newLine += toString(katzDeliLine.length) + '. ' + katzDeliLine[katzDeliLine.length - 1];
+     
     }
   }
   return newLine
