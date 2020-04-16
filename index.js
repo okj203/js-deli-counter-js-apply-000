@@ -23,6 +23,7 @@ let currentLine = katzDeliLine => {
   }else {
     for (let i = 0; i < katzDeliLine.length - 1; i++) {
       let person = katzDeliLine[i];
+      newStr += 
     }
   }
 }
